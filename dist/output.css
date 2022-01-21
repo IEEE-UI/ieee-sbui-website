@@ -779,6 +779,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-gradient-to-t{
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
 .from-sky-500{
   --tw-gradient-from: #0ea5e9;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(14 165 233 / 0));
@@ -818,6 +822,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .to-cyan-300{
   --tw-gradient-to: #67e8f9;
+}
+
+.to-transparent{
+  --tw-gradient-to: transparent;
 }
 
 .p-2{
@@ -913,6 +921,30 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-10{
   padding-top: 2.5rem;
+}
+
+.pl-0{
+  padding-left: 0px;
+}
+
+.pr-0{
+  padding-right: 0px;
+}
+
+.pb-0{
+  padding-bottom: 0px;
+}
+
+.pr-4{
+  padding-right: 1rem;
+}
+
+.pt-1{
+  padding-top: 0.25rem;
+}
+
+.pb-1{
+  padding-bottom: 0.25rem;
 }
 
 .text-left{
@@ -1033,6 +1065,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-blue-800{
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
+}
+
+.opacity-5{
+  opacity: 0.05;
+}
+
+.opacity-100{
+  opacity: 1;
 }
 
 .shadow{
