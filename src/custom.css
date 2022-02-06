@@ -1,0 +1,12 @@
+.from-blue-ieee{
+    --tw-gradient-from: #00A19D;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(255 248 229 / 0));
+  }
+
+  .via-white-ieee{
+    --tw-gradient-stops: var(--tw-gradient-from), #FFF8E5, var(--tw-gradient-to, rgb(255 248 229 / 0));
+  }
+
+  .to-yellow-ieee {
+    --tw-gradient-to: #FFB344;
+  }

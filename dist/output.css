@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
 
 /*
-! tailwindcss v3.0.15 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.18 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -516,6 +516,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 .top-0{
   top: 0px;
 }
@@ -686,6 +691,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.resize{
+  resize: both;
+}
+
 .flex-wrap{
   flex-wrap: wrap;
 }
@@ -734,9 +743,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-style: dotted;
 }
 
-.border-blue-600{
+.border-blue-800{
   --tw-border-opacity: 1;
-  border-color: rgb(37 99 235 / var(--tw-border-opacity));
+  border-color: rgb(30 64 175 / var(--tw-border-opacity));
 }
 
 .border-gray-900{
@@ -752,11 +761,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-gray-700{
   --tw-border-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
-}
-
-.border-blue-800{
-  --tw-border-opacity: 1;
-  border-color: rgb(30 64 175 / var(--tw-border-opacity));
 }
 
 .bg-white{
@@ -779,47 +783,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
-.bg-gradient-to-r{
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.from-sky-500{
-  --tw-gradient-from: #0ea5e9;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(14 165 233 / 0));
-}
-
-.from-sky-600{
-  --tw-gradient-from: #0284c7;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(2 132 199 / 0));
-}
-
-.from-sky-400{
-  --tw-gradient-from: #38bdf8;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(56 189 248 / 0));
-}
-
-.via-blue-500{
-  --tw-gradient-stops: var(--tw-gradient-from), #3b82f6, var(--tw-gradient-to, rgb(59 130 246 / 0));
-}
-
-.via-blue-300{
-  --tw-gradient-stops: var(--tw-gradient-from), #93c5fd, var(--tw-gradient-to, rgb(147 197 253 / 0));
-}
-
-.via-blue-400{
-  --tw-gradient-stops: var(--tw-gradient-from), #60a5fa, var(--tw-gradient-to, rgb(96 165 250 / 0));
-}
-
-.to-cyan-300{
-  --tw-gradient-to: #67e8f9;
-}
-
-.to-cyan-400{
-  --tw-gradient-to: #22d3ee;
-}
-
-.to-cyan-200{
-  --tw-gradient-to: #a5f3fc;
+.bg-gradient-to-br{
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 
 .p-2{
@@ -889,10 +854,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2.5rem;
 }
 
-.pl-3{
-  padding-left: 0.75rem;
-}
-
 .pt-48{
   padding-top: 12rem;
 }
@@ -919,6 +880,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-0{
   padding-bottom: 0px;
+}
+
+.pl-3{
+  padding-left: 0.75rem;
 }
 
 .text-left{
@@ -975,6 +940,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-transform: uppercase;
 }
 
+.leading-snug{
+  line-height: 1.375;
+}
+
 .leading-loose{
   line-height: 2;
 }
@@ -983,22 +952,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
-.leading-snug{
-  line-height: 1.375;
-}
-
 .tracking-wide{
   letter-spacing: 0.025em;
 }
 
-.text-blue-600{
+.text-blue-800{
   --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
+  color: rgb(30 64 175 / var(--tw-text-opacity));
+}
+
+.text-gray-800{
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .text-gray-600{
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-blue-600{
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -1021,20 +996,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
-.text-blue-800{
-  --tw-text-opacity: 1;
-  color: rgb(30 64 175 / var(--tw-text-opacity));
-}
-
-.text-gray-800{
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
-}
-
-.opacity-100{
-  opacity: 1;
-}
-
 .opacity-0{
   opacity: 0;
 }
@@ -1054,6 +1015,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .outline-none{
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.transition{
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .duration-300{
@@ -1386,9 +1355,9 @@ p{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:bg-blue-500:hover{
+.hover\:bg-blue-600:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-indigo-500:hover{
@@ -1409,11 +1378,6 @@ p{
 .hover\:bg-indigo-600:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(79 70 229 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-blue-600:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .hover\:text-white:hover{
@@ -1468,6 +1432,11 @@ p{
   .sm\:w-3\/4{
     width: 75%;
   }
+
+  .sm\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 768px){
@@ -1498,6 +1467,11 @@ p{
   .md\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
@@ -1548,6 +1522,11 @@ p{
 
   .lg\:bg-transparent{
     background-color: transparent;
+  }
+
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .lg\:shadow-none{
