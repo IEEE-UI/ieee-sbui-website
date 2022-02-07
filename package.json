@@ -4,5 +4,22 @@
   },
   "dependencies": {
     "tw-elements": "^1.0.0-alpha10"
-  }
+  },
+  "name": "ieee-web",
+  "version": "1.0.0",
+  "description": "ieee ui website",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariqpradipa/ieee-sbui-website.git"
+  },
+  "author": "ieee sbui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ariqpradipa/ieee-sbui-website/issues"
+  },
+  "homepage": "https://github.com/ariqpradipa/ieee-sbui-website#readme"
 }

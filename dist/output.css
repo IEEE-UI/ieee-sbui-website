@@ -4380,6 +4380,10 @@ textarea.form-control.is-invalid{
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 
+.bg-gradient-to-r{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
 .bg-no-repeat{
   background-repeat: no-repeat;
 }
