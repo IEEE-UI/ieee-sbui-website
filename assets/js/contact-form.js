@@ -19,7 +19,7 @@
             return;
         }
 
-        this.form     = form instanceof Node ? form : document.querySelector(form);
+        this.form = form instanceof Node ? form : document.querySelector(form);
         this.endpoint = options.endpoint;
 
         this.send();
@@ -65,7 +65,7 @@
         removeElementsByClass: function (className) {
             var elements = document.getElementsByClassName(className);
 
-            while(elements.length > 0){
+            while (elements.length > 0) {
                 elements[0].parentNode.removeChild(elements[0]);
             }
         },
@@ -115,11 +115,11 @@
                 }.bind(this));
 
                 formData = {
-                    'name'    : document.querySelector('input[name="form-name"]').value,
-                    'email'   : document.querySelector('input[name="form-email"]').value,
-                    'number'   : document.querySelector('input[name="form-number"]').value,
-                    'subject' : document.querySelector('input[name="form-subject"]').value,
-                    'message' : document.querySelector('textarea[name="form-message"]').value
+                    'name': document.querySelector('input[name="form-name"]').value,
+                    'email': document.querySelector('input[name="form-email"]').value,
+                    'number': document.querySelector('input[name="form-number"]').value,
+                    'subject': document.querySelector('input[name="form-subject"]').value,
+                    'message': document.querySelector('textarea[name="form-message"]').value
                 };
 
                 this.post(this.endpoint, this.param(formData), this.feedback.bind(this), this.fail.bind(this));
@@ -176,7 +176,7 @@
                         report: data.errors.message
                     });
 
-                    message.insertAdjacentHTML('beforeend', error);  
+                    message.insertAdjacentHTML('beforeend', error);
                 }
             } else {
                 var success = this.template(
