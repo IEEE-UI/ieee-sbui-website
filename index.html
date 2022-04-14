@@ -21,6 +21,8 @@
 <link href="/dist/output.css" rel="stylesheet">
 <!-- Custom CSS-->
 <link href="/src/custom.css" rel="stylesheet">
+<!-- Font Butler -->
+<link rel="stylesheet" type="text/css" href="assets/fonts/Butler_Webfont/stylesheet.css">
 </head>
 
 <body>
@@ -71,26 +73,46 @@
   </header>
   <!-- Header Area wrapper End -->
 
-  <!-- Hero Area Start -->
-  <section id="hero-area" class="bg-gradient-to-br from-blue-ieee via-white-ieee to-yellow-ieee pt-48 pb-10">
-    <div class="container h-100">
-      <div class="flex justify-between">
-        <div class="w-full text-center">
-          <h2 class="sm:text-5xl text-left font-bold leading-snug text-gray-800 wow fadeInUp font-mono pt-10 pl-20"
-            data-wow-delay="1s">Welcome to IEEE Student Branch
-            <br class="hidden lg:block font-mono"> Universitas Indonesia
-          </h2>
-          <div class="text-center wow fadeInUp" data-wow-delay="1.6s">
-            <img class="img-fluid pl-0 pr-0 pb-0 opacity-0" src="assets/img/hero.svg" alt="">
-          </div>
-        </div>
+  <!-- Updated Hero Area Start -->
+  <section id="hero-area">
+    <!-- decor -->
+    <div class="gradient-decor wow fadeInUp" data-wow-delay="1.3s"></div>
+    <div class="multi-dots wow fadeInUp" data-wow-delay="1.3s">
+      <img class="img-fluid" src="assets/img/decor/multi-dots.png" alt="">
+    </div>
+    <div class="lower-star wow fadeInUp" data-wow-delay="1.3s">
+      <img class="img-fluid" src="assets/img/decor/star.png" alt="">
+    </div>
+    <div class="upper-star wow fadeInUp" data-wow-delay="1.3s">
+      <img class="img-fluid" src="assets/img/decor/star.png" alt="">
+    </div>
+
+    <!-- info -->
+    <div class="w-full text-center">
+      <h2 id="title" class="text-6xl sm:text-8xl px-8 wow fadeInUp mb-4" data-wow-delay="1s">
+        IEEE SBUI
+      </h2>
+      <br>
+      <h2 id="title-meaning" class="px-8 wow fadeInUp mb-4" data-wow-delay="1.6s"> Institute of Electrical and
+        Electronics Engineers Student Branch Universitas Indonesia
+      </h2>
+      <h2 id="subtitle" class="px-8 wow fadeInUp" data-wow-delay="1.6s"> the first IEEE student branch in
+        Indonesia
+      </h2>
+      <br>
+      <h2 id="tagline" class="px-8 wow fadeInUp mb-4 text-2xl" data-wow-delay="1.9s">#ProgressivelyStandardizing</h2>
+      <br>
+      <div class="scroll wow fadeInDown" data-wow-delay="2.1s">
+        <a href="#divisions">
+          <img class="img-fluid down-arrow" src="assets/img/down-arrow.png" alt="Get to know us!">
+        </a>
       </div>
     </div>
   </section>
-  <!-- Hero Area End -->
+  <!-- Updated Hero Area End -->
 
   <!-- Updated Services Section Start-->
-  <section class="py-24 px-10" style="background: rgb(255,248,229);
+  <section id="divisions" class="py-24 px-10" style="background: rgb(255,248,229);
     background: linear-gradient(90deg, rgba(255,248,229,1) 30%, rgba(255,255,255,1) 100%);">
     <div class="container">
       <div class="text-center">
@@ -99,7 +121,8 @@
       <div class="flex flex-wrap justify-center -m-3">
         <!-- first card -->
         <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col p-3">
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col shadow-lg wow fadeInLeft" data-wow-delay="0.3s">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col shadow-lg wow fadeInLeft"
+            data-wow-delay="0.3s">
             <div class="bg-cover h-48" style="background-image: url(assets/img/foto-cover-treasurer.jpg);"></div>
             <div class="p-4 flex-1 flex flex-col">
               <h2 class="mb-4 text-2xl font-semibold" style="color: #3063AF;">Treasurer & <br> Secretary</h2>
@@ -114,7 +137,8 @@
         </div>
         <!-- second card -->
         <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col p-3">
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col shadow-lg  wow fadeInLeft" data-wow-delay="0.4s">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col shadow-lg  wow fadeInLeft"
+            data-wow-delay="0.4s">
             <div class="bg-cover h-48" style="background-image: url(assets/img/foto-cover-edudev.jpg);"></div>
             <div class="p-4 flex-1 flex flex-col" style="
       ">
@@ -130,7 +154,8 @@
         </div>
         <!-- third card -->
         <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col p-3">
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col shadow-lg wow fadeInLeft" data-wow-delay="0.5s">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col shadow-lg wow fadeInLeft"
+            data-wow-delay="0.5s">
             <div class="bg-cover h-48" style="background-image: url(assets/img/foto-cover-internal.jpg);"></div>
             <div class="p-4 flex-1 flex flex-col" style="">
               <h2 class="mb-4 text-2xl font-semibold" style="color: #3063AF;">Internal <br>Operation</h2>
@@ -145,7 +170,8 @@
         </div>
         <!-- fourth card -->
         <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col p-3">
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col shadow-lg wow fadeInLeft" data-wow-delay="0.6s">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col shadow-lg wow fadeInLeft"
+            data-wow-delay="0.6s">
             <div class="bg-cover h-48" style="background-image: url(assets/img/foto-cover-PR.jpg);"></div>
             <div class="p-4 flex-1 flex flex-col" style="
       ">

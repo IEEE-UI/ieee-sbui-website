@@ -4074,25 +4074,12 @@ textarea.form-control.is-invalid{
   z-index: 20;
 }
 
-.m-3{
-  margin: 0.75rem;
-}
-
-.m-2{
-  margin: 0.5rem;
-}
-
-.m-4{
-  margin: 1rem;
-}
-
 .-m-3{
   margin: -0.75rem;
 }
 
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
+.m-4{
+  margin: 1rem;
 }
 
 .mx-3{
@@ -4114,12 +4101,12 @@ textarea.form-control.is-invalid{
   margin-right: auto;
 }
 
-.mb-12{
-  margin-bottom: 3rem;
+.mb-4{
+  margin-bottom: 1rem;
 }
 
-.mb-5{
-  margin-bottom: 1.25rem;
+.mb-12{
+  margin-bottom: 3rem;
 }
 
 .mb-3{
@@ -4134,12 +4121,12 @@ textarea.form-control.is-invalid{
   margin-bottom: 2rem;
 }
 
-.mr-5{
-  margin-right: 1.25rem;
+.mb-5{
+  margin-bottom: 1.25rem;
 }
 
-.mb-4{
-  margin-bottom: 1rem;
+.mr-5{
+  margin-right: 1.25rem;
 }
 
 .block{
@@ -4158,6 +4145,10 @@ textarea.form-control.is-invalid{
   display: none;
 }
 
+.h-48{
+  height: 12rem;
+}
+
 .h-10{
   height: 2.5rem;
 }
@@ -4166,20 +4157,12 @@ textarea.form-control.is-invalid{
   height: 100%;
 }
 
-.h-48{
-  height: 12rem;
-}
-
 .w-full{
   width: 100%;
 }
 
 .w-10{
   width: 2.5rem;
-}
-
-.flex-auto{
-  flex: 1 1 auto;
 }
 
 .flex-1{
@@ -4246,21 +4229,12 @@ textarea.form-control.is-invalid{
   border-radius: 0.5rem;
 }
 
-.rounded-t-lg{
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-
 .border{
   border-width: 1px;
 }
 
 .border-t-2{
   border-top-width: 2px;
-}
-
-.border-t{
-  border-top-width: 1px;
 }
 
 .border-dotted{
@@ -4296,17 +4270,8 @@ textarea.form-control.is-invalid{
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
-.bg-gradient-to-br{
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-}
-
 .bg-cover{
   background-size: cover;
-}
-
-.object-center{
-  -o-object-position: center;
-     object-position: center;
 }
 
 .p-3{
@@ -4342,11 +4307,6 @@ textarea.form-control.is-invalid{
   padding-right: 2rem;
 }
 
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .py-24{
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -4362,9 +4322,9 @@ textarea.form-control.is-invalid{
   padding-bottom: 4rem;
 }
 
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pl-4{
@@ -4375,48 +4335,13 @@ textarea.form-control.is-invalid{
   padding-right: 2.5rem;
 }
 
-.pt-48{
-  padding-top: 12rem;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
-}
-
-.pt-10{
-  padding-top: 2.5rem;
-}
-
-.pl-20{
-  padding-left: 5rem;
-}
-
-.pl-0{
-  padding-left: 0px;
-}
-
-.pr-0{
-  padding-right: 0px;
-}
-
-.pb-0{
-  padding-bottom: 0px;
-}
-
-.pt-2{
-  padding-top: 0.5rem;
-}
-
-.text-left{
-  text-align: left;
-}
-
 .text-center{
   text-align: center;
 }
 
-.font-mono{
-  font-family: ui-monospace, monospace;
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-2xl{
@@ -4439,43 +4364,17 @@ textarea.form-control.is-invalid{
   line-height: 1.75rem;
 }
 
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
+.font-semibold{
+  font-weight: 600;
 }
 
 .font-bold{
   font-weight: 700;
 }
 
-.font-semibold{
-  font-weight: 600;
-}
-
-.uppercase{
-  text-transform: uppercase;
-}
-
-.leading-snug{
-  line-height: 1.375;
-}
-
-.leading-relaxed{
-  line-height: 1.625;
-}
-
-.tracking-wide{
-  letter-spacing: 0.025em;
-}
-
 .text-blue-800{
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
-}
-
-.text-gray-800{
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .text-gray-300{
@@ -4486,15 +4385,6 @@ textarea.form-control.is-invalid{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.no-underline{
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
-}
-
-.opacity-0{
-  opacity: 0;
 }
 
 .shadow{
@@ -4921,23 +4811,19 @@ p{
     width: 50%;
   }
 
-  .sm\:text-5xl{
-    font-size: 3rem;
+  .sm\:text-8xl{
+    font-size: 6rem;
     line-height: 1;
   }
 }
 
 @media (min-width: 768px){
-  .md\:w-1\/2{
-    width: 50%;
-  }
-
-  .md\:w-1\/4{
-    width: 25%;
-  }
-
   .md\:w-1\/3{
     width: 33.333333%;
+  }
+
+  .md\:w-1\/2{
+    width: 50%;
   }
 }
 
@@ -4962,16 +4848,16 @@ p{
     display: none;
   }
 
+  .lg\:w-1\/4{
+    width: 25%;
+  }
+
   .lg\:w-1\/3{
     width: 33.333333%;
   }
 
   .lg\:w-7\/12{
     width: 58.333333%;
-  }
-
-  .lg\:w-1\/4{
-    width: 25%;
   }
 
   .lg\:bg-transparent{

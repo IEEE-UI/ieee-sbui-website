@@ -1,16 +1,85 @@
-.from-blue-ieee{
-    --tw-gradient-from: #00A19D;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(255 248 229 / 0));
-  }
+.from-blue-ieee {
+  --tw-gradient-from: #00A19D;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(255 248 229 / 0));
+}
 
-  .via-white-ieee{
-    --tw-gradient-stops: var(--tw-gradient-from), #FFF8E5, var(--tw-gradient-to, rgb(255 248 229 / 0));
-  }
+.via-white-ieee {
+  --tw-gradient-stops: var(--tw-gradient-from), #FFF8E5, var(--tw-gradient-to, rgb(255 248 229 / 0));
+}
 
-  .to-yellow-ieee {
-    --tw-gradient-to: #FFB344;
-  }
+.to-yellow-ieee {
+  --tw-gradient-to: #FFB344;
+}
 
-  .h-100{
-    height: 31.8rem;
+.h-100 {
+  height: 31.8rem;
+}
+
+/* Custom CSS for Hero Area Start*/
+#hero-area {
+  color: #333333;
+  background-image: conic-gradient(from 180deg at 50% 50%, #FFF8E5 0deg, #F2F2F2 88.12deg, #00A19D 168.75deg, #FFF8E5 360deg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+}
+
+#title {
+  font-family: Butler, sans-serif;
+  font-weight: bold;
+}
+
+#subtitle {
+  font-style: italic;
+}
+
+#tagline {
+  font-family: Butler, sans-serif;
+}
+
+.gradient-decor {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  right: 0px;
+  top: 60vh;
+  background: linear-gradient(180deg, #FFB344 0%, #E05D5D 100%);
+  filter: blur(200px);
+}
+
+.multi-dots {
+  position: absolute;
+  left: 0px;
+  width: 10vw;
+}
+
+.lower-star {
+  position: absolute;
+  bottom: 25vh;
+  left: 25vw;
+  width: 5vw;
+}
+
+.upper-star {
+  position: absolute;
+  top: 25vh;
+  right: 25vw;
+  width: 2vw;
+}
+
+.scroll {
+  width: 5vw;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .multi-dots {
+    width: 0px;
   }
+}
+
+/* Custom CSS for Hero Area End*/
