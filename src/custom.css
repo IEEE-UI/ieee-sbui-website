@@ -41,6 +41,11 @@
   font-family: Butler, sans-serif;
 }
 
+.section-title{
+  font-family: Butler, sans-serif;
+  font-weight: semibold;
+}
+
 .gradient-decor {
   position: absolute;
   width: 450px;

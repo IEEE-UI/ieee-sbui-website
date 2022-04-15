@@ -1541,6 +1541,12 @@ textarea.form-control.is-invalid{
   touch-action: pan-y;
 }
 
+.carousel-inner::after{
+  display: block;
+  clear: both;
+  content: "";
+}
+
 .carousel-item{
   display: none;
   margin-right: -100%;
@@ -1610,6 +1616,60 @@ textarea.form-control.is-invalid{
   transition: opacity 0s 0.6s;
 }
 
+.carousel-control-prev{
+  z-index: 1;
+  width: 15%;
+  color: #fff;
+  background: none;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+
+.carousel-control-next{
+  z-index: 1;
+  width: 15%;
+  color: #fff;
+  background: none;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+
+.carousel-control-prev:hover{
+  color: #fff;
+  opacity: 0.9;
+}
+
+.carousel-control-prev:focus{
+  color: #fff;
+  opacity: 0.9;
+}
+
+.carousel-control-next:hover{
+  color: #fff;
+  opacity: 0.9;
+}
+
+.carousel-control-next:focus{
+  color: #fff;
+  opacity: 0.9;
+}
+
+.carousel-control-prev-icon{
+  width: 2rem;
+  height: 2rem;
+  background-position: 50%;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon{
+  width: 2rem;
+  height: 2rem;
+  background-position: 50%;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
 .carousel-indicators{
   z-index: 2;
   margin-right: 15%;
@@ -1639,6 +1699,14 @@ textarea.form-control.is-invalid{
 
 .carousel-indicators .active{
   opacity: 1;
+}
+
+.carousel-dark .carousel-control-prev-icon{
+  filter: invert(1) grayscale(100);
+}
+
+.carousel-dark .carousel-control-next-icon{
+  filter: invert(1) grayscale(100);
 }
 
 .carousel-dark .carousel-indicators [data-bs-target]{
@@ -1676,6 +1744,18 @@ textarea.form-control.is-invalid{
   position: sticky;
   top: 0;
   z-index: 1020;
+}
+
+.visually-hidden{
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
 
 .vr{
@@ -4058,12 +4138,12 @@ textarea.form-control.is-invalid{
   left: 0px;
 }
 
-.bottom-0{
-  bottom: 0px;
-}
-
 .right-0{
   right: 0px;
+}
+
+.bottom-0{
+  bottom: 0px;
 }
 
 .z-30{
@@ -4074,12 +4154,24 @@ textarea.form-control.is-invalid{
   z-index: 20;
 }
 
+.float-left{
+  float: left;
+}
+
+.float-none{
+  float: none;
+}
+
 .-m-3{
   margin: -0.75rem;
 }
 
 .m-4{
   margin: 1rem;
+}
+
+.m-2{
+  margin: 0.5rem;
 }
 
 .mx-3{
@@ -4095,6 +4187,16 @@ textarea.form-control.is-invalid{
 .mx-2{
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mr-auto{
@@ -4129,8 +4231,20 @@ textarea.form-control.is-invalid{
   margin-right: 1.25rem;
 }
 
+.ml-10{
+  margin-left: 2.5rem;
+}
+
+.ml-5{
+  margin-left: 1.25rem;
+}
+
 .block{
   display: block;
+}
+
+.inline-block{
+  display: inline-block;
 }
 
 .flex{
@@ -4157,12 +4271,56 @@ textarea.form-control.is-invalid{
   height: 100%;
 }
 
+.h-3\/4{
+  height: 75%;
+}
+
+.h-12{
+  height: 3rem;
+}
+
+.h-1\/2{
+  height: 50%;
+}
+
+.h-40{
+  height: 10rem;
+}
+
+.h-80{
+  height: 20rem;
+}
+
+.h-1\/3{
+  height: 33.333333%;
+}
+
+.h-1\/5{
+  height: 20%;
+}
+
 .w-full{
   width: 100%;
 }
 
 .w-10{
   width: 2.5rem;
+}
+
+.w-11\/12{
+  width: 91.666667%;
+}
+
+.w-3\/4{
+  width: 75%;
+}
+
+.w-1\/2{
+  width: 50%;
+}
+
+.w-3\/5{
+  width: 60%;
 }
 
 .flex-1{
@@ -4179,6 +4337,11 @@ textarea.form-control.is-invalid{
 
 .resize{
   resize: both;
+}
+
+.scroll-px-20{
+  scroll-padding-left: 5rem;
+  scroll-padding-right: 5rem;
 }
 
 .flex-row{
@@ -4233,6 +4396,10 @@ textarea.form-control.is-invalid{
   border-width: 1px;
 }
 
+.border-0{
+  border-width: 0px;
+}
+
 .border-t-2{
   border-top-width: 2px;
 }
@@ -4274,12 +4441,25 @@ textarea.form-control.is-invalid{
   background-size: cover;
 }
 
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-3{
   padding: 0.75rem;
 }
 
 .p-4{
   padding: 1rem;
+}
+
+.p-0{
+  padding: 0px;
 }
 
 .py-2{
@@ -4325,6 +4505,11 @@ textarea.form-control.is-invalid{
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .pl-4{
@@ -4785,6 +4970,21 @@ p{
   color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
+.hover\:no-underline:hover{
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.hover\:outline-none:hover{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus\:no-underline:focus{
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -4811,6 +5011,15 @@ p{
     width: 50%;
   }
 
+  .sm\:w-full{
+    width: 100%;
+  }
+
+  .sm\:px-5{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .sm\:text-8xl{
     font-size: 6rem;
     line-height: 1;
@@ -4818,12 +5027,46 @@ p{
 }
 
 @media (min-width: 768px){
+  .md\:ml-8{
+    margin-left: 2rem;
+  }
+
+  .md\:mr-8{
+    margin-right: 2rem;
+  }
+
+  .md\:ml-10{
+    margin-left: 2.5rem;
+  }
+
+  .md\:mr-10{
+    margin-right: 2.5rem;
+  }
+
   .md\:w-1\/3{
     width: 33.333333%;
   }
 
   .md\:w-1\/2{
     width: 50%;
+  }
+
+  .md\:w-full{
+    width: 100%;
+  }
+
+  .md\:w-3\/4{
+    width: 75%;
+  }
+
+  .md\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -4860,8 +5103,17 @@ p{
     width: 58.333333%;
   }
 
+  .lg\:w-3\/4{
+    width: 75%;
+  }
+
   .lg\:bg-transparent{
     background-color: transparent;
+  }
+
+  .lg\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .lg\:shadow-none{
