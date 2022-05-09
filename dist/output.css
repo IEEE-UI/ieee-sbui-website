@@ -4194,6 +4194,10 @@ textarea.form-control.is-invalid{
   margin-bottom: 1rem;
 }
 
+.mr-10{
+  margin-right: 2.5rem;
+}
+
 .mb-12{
   margin-bottom: 3rem;
 }
@@ -4322,6 +4326,10 @@ textarea.form-control.is-invalid{
   border-radius: 9999px;
 }
 
+.rounded-3xl{
+  border-radius: 1.5rem;
+}
+
 .rounded-lg{
   border-radius: 0.5rem;
 }
@@ -4421,6 +4429,11 @@ textarea.form-control.is-invalid{
   padding-right: 2rem;
 }
 
+.py-\[100px\]{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .py-24{
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -4453,6 +4466,10 @@ textarea.form-control.is-invalid{
   text-align: center;
 }
 
+.text-justify{
+  text-align: justify;
+}
+
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
@@ -4463,9 +4480,9 @@ textarea.form-control.is-invalid{
   line-height: 2rem;
 }
 
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-xl{
@@ -4473,9 +4490,18 @@ textarea.form-control.is-invalid{
   line-height: 1.75rem;
 }
 
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.font-medium{
+  font-weight: 500;
 }
 
 .font-semibold{
@@ -4484,6 +4510,10 @@ textarea.form-control.is-invalid{
 
 .font-bold{
   font-weight: 700;
+}
+
+.tracking-widest{
+  letter-spacing: 0.1em;
 }
 
 .text-blue-800{
@@ -4519,6 +4549,16 @@ textarea.form-control.is-invalid{
 
 .blur{
   --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.drop-shadow-md{
+  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.grayscale{
+  --tw-grayscale: grayscale(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
