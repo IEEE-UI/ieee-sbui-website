@@ -126,14 +126,14 @@ p {
 }
 
 .footer-links {
-  @apply leading-9 text-gray-100 duration-300;
+  @apply  text-black duration-300;
 }
 .footer-links:hover {
   @apply text-blue-500;
 }
 .footer-icon {
-  @apply flex justify-center items-center w-8 h-8 bg-white rounded-full text-sm text-gray-700 duration-300;
+  @apply flex justify-center items-center w-8 h-8 bg-transparent rounded-full text-lg text-gray-700 duration-300;
 }
 .footer-icon:hover {
-  @apply text-white;
+  @apply text-black;
 }
