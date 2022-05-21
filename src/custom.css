@@ -45,7 +45,7 @@
   font-family: Butler, sans-serif;
 }
 
-.section-title{
+.section-title {
   font-family: Butler, sans-serif;
   font-weight: semibold;
 }
@@ -93,14 +93,23 @@
 
 /* Custom CSS for Hero Area End*/
 
-.about-us-bg{
+.about-us-bg {
   position: relative;
   background: linear-gradient(89.93deg, rgba(232, 229, 219, 0.5) 0.15%, rgba(195, 228, 212, 0.5) 100.02%), conic-gradient(from 180deg at 50% 50%, #F2F2F2 -115.37deg, #FFF8E5 182.03deg, #F2F2F2 244.63deg, #FFF8E5 542.03deg);
 }
 
-.about-us-box{
+.about-us-box {
   background: linear-gradient(111.1deg, rgba(255, 255, 255, 0.4) 19.82%, rgba(196, 196, 196, 0.16) 84.56%);
   box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(40px);
   border-radius: 30px;
+}
+
+/* Custom CSS for EVENTS START*/
+.events-container {
+  position: absolute;
+  width: 1581px;
+  height: 200px;
+  left: 191px;
+  top: 3446px;
 }
