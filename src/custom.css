@@ -19,6 +19,17 @@
   height: 31.8rem;
 }
 
+.navitem {
+  display: inline-block;
+  text-align: center;
+}
+
+.orange-ieee {
+
+  color: #FFB344;
+
+}
+
 /* Custom CSS for Hero Area Start*/
 #hero-area {
   color: #333333;
@@ -152,4 +163,15 @@
   width: 40vw;
   right: 0vw;
   top: 38vh;
+}
+
+.register-container {
+  
+  position: absolute;
+  background: linear-gradient(95.6deg, rgba(48, 99, 175, 0.67) 5.16%, rgba(0, 161, 157, 0.8) 98.6%);
+  left: 27,5vw;
+  height: 35vh;
+  width: 55vw;
+  bottom: 10vh;
+
 }
