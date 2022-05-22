@@ -113,3 +113,43 @@
   left: 191px;
   top: 3446px;
 }
+
+/* Custom CSS for EVENTS END*/
+
+/* Custom CSS for member registration START*/
+
+#member-registration {
+  position: relative;
+  background: linear-gradient(124.22deg, #FFF8E5 10.72%, #00A19D 127.62%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+}
+
+.regist-title {
+  font-family: 'Butler';
+  font-style: normal;
+  color: #3063AF;
+
+  position: absolute;
+  top: 25vh;
+
+}
+
+.two-circle {
+  position: absolute;
+  width: 5vw;
+  left: 8vw;
+  top: 20vh;
+}
+
+.two-lines {
+  position: absolute;
+  width: 40vw;
+  right: 0vw;
+  top: 38vh;
+}
