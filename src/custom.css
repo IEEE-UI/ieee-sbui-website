@@ -30,12 +30,10 @@
 
 }
 
-/* Custom CSS for Hero Area Start*/
+/* Custom CSS for Hero Area START */
+
 #hero-area {
-  color: #333333;
-  background-image: conic-gradient(from 180deg at 50% 50%, #FFF8E5 0deg, #F2F2F2 88.12deg, #00A19D 168.75deg, #FFF8E5 360deg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  color: #333333;  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,14 +59,12 @@
   font-weight: semibold;
 }
 
-.gradient-decor {
+.gradient-circle{
   position: absolute;
-  width: 450px;
-  height: 450px;
+  width: 25rem;
   right: 0px;
-  top: 60vh;
-  background: linear-gradient(180deg, #FFB344 0%, #E05D5D 100%);
-  filter: blur(200px);
+  top: 30vh;
+  z-index: 1;
 }
 
 .multi-dots {
@@ -92,17 +88,43 @@
 }
 
 .scroll {
+  position: relative;
   width: 5vw;
   margin: 0 auto;
+  z-index: 1;
+}
+
+img{
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 @media (max-width: 1024px) {
+  .gradient-circle {
+    top: 50vh;
+  }
   .multi-dots {
     width: 0px;
   }
 }
 
-/* Custom CSS for Hero Area End*/
+@media (max-width: 820px) {
+  .gradient-circle {
+    top: 60vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .gradient-circle {
+    top: 70vh;
+    width: 15rem;
+  }
+}
+
+/* Custom CSS for Hero Area END */
 
 .about-us-bg {
   position: relative;
@@ -116,7 +138,7 @@
   border-radius: 30px;
 }
 
-/* Custom CSS for EVENTS START*/
+/* Custom CSS for Events START */
 .events-container {
   position: absolute;
   width: 1581px;
@@ -125,9 +147,9 @@
   top: 3446px;
 }
 
-/* Custom CSS for EVENTS END*/
+/* Custom CSS for Events END */
 
-/* Custom CSS for member registration START*/
+/* Custom CSS for Member Registration START */
 
 #member-registration {
   position: relative;
