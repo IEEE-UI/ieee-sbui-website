@@ -4176,6 +4176,11 @@ textarea.form-control.is-invalid{
   margin-right: 1.5rem;
 }
 
+.my-auto{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mx-3{
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -4213,12 +4218,20 @@ textarea.form-control.is-invalid{
   margin-bottom: 1.5rem;
 }
 
-.mb-8{
-  margin-bottom: 2rem;
+.ml-auto{
+  margin-left: auto;
+}
+
+.ml-20{
+  margin-left: 5rem;
 }
 
 .mb-2{
   margin-bottom: 0.5rem;
+}
+
+.mr-0{
+  margin-right: 0px;
 }
 
 .ml-2{
@@ -4257,12 +4270,22 @@ textarea.form-control.is-invalid{
   height: 100%;
 }
 
+.h-36{
+  height: 9rem;
+}
+
 .h-10{
   height: 2.5rem;
 }
 
 .w-full{
   width: 100%;
+}
+
+.w-fit{
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .w-10{
@@ -4320,59 +4343,6 @@ textarea.form-control.is-invalid{
 .animate-bounce{
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
-}
-
-@-webkit-keyframes pulse{
-  50%{
-    opacity: .5;
-  }
-}
-
-@keyframes pulse{
-  50%{
-    opacity: .5;
-  }
-}
-
-.animate-pulse{
-  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@-webkit-keyframes spin{
-  to{
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spin{
-  to{
-    transform: rotate(360deg);
-  }
-}
-
-.animate-spin{
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
-}
-
-@-webkit-keyframes ping{
-  75%, 100%{
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-@keyframes ping{
-  75%, 100%{
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.animate-ping{
-  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 .resize{
@@ -4502,6 +4472,11 @@ textarea.form-control.is-invalid{
      object-fit: cover;
 }
 
+.object-scale-down{
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
 .p-3{
   padding: 0.75rem;
 }
@@ -4558,9 +4533,9 @@ textarea.form-control.is-invalid{
   padding-bottom: 6rem;
 }
 
-.py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .py-6{
@@ -4604,6 +4579,11 @@ textarea.form-control.is-invalid{
   line-height: 1.25rem;
 }
 
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -4612,11 +4592,6 @@ textarea.form-control.is-invalid{
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-xs{
@@ -5133,40 +5108,6 @@ p{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media (prefers-reduced-motion: no-preference){
-  @-webkit-keyframes bounce{
-    0%, 100%{
-      transform: translateY(-25%);
-      -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-              animation-timing-function: cubic-bezier(0.8,0,1,1);
-    }
-
-    50%{
-      transform: none;
-      -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-              animation-timing-function: cubic-bezier(0,0,0.2,1);
-    }
-  }
-  @keyframes bounce{
-    0%, 100%{
-      transform: translateY(-25%);
-      -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-              animation-timing-function: cubic-bezier(0.8,0,1,1);
-    }
-
-    50%{
-      transform: none;
-      -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-              animation-timing-function: cubic-bezier(0,0,0.2,1);
-    }
-  }
-
-  .motion-safe\:animate-bounce{
-    -webkit-animation: bounce 1s infinite;
-            animation: bounce 1s infinite;
-  }
-}
-
 @media (min-width: 640px){
   .sm\:absolute{
     position: absolute;
@@ -5207,6 +5148,11 @@ p{
   .sm\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -5256,6 +5202,16 @@ p{
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -5327,9 +5283,21 @@ p{
     line-height: 1;
   }
 
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .lg\:shadow-none{
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 }
