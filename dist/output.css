@@ -4242,6 +4242,38 @@ textarea.form-control.is-invalid{
   margin-top: 0.25rem;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
+.ml-0{
+  margin-left: 0px;
+}
+
+.mb-7{
+  margin-bottom: 1.75rem;
+}
+
+.mb-20{
+  margin-bottom: 5rem;
+}
+
+.ml-10{
+  margin-left: 2.5rem;
+}
+
+.mr-10{
+  margin-right: 2.5rem;
+}
+
+.ml-40{
+  margin-left: 10rem;
+}
+
+.mr-40{
+  margin-right: 10rem;
+}
+
 .block{
   display: block;
 }
@@ -4258,6 +4290,10 @@ textarea.form-control.is-invalid{
   display: table;
 }
 
+.grid{
+  display: grid;
+}
+
 .hidden{
   display: none;
 }
@@ -4268,10 +4304,6 @@ textarea.form-control.is-invalid{
 
 .h-full{
   height: 100%;
-}
-
-.h-36{
-  height: 9rem;
 }
 
 .h-10{
@@ -4361,6 +4393,14 @@ textarea.form-control.is-invalid{
   flex-wrap: wrap;
 }
 
+.place-items-center{
+  place-items: center;
+}
+
+.content-center{
+  align-content: center;
+}
+
 .items-center{
   align-items: center;
 }
@@ -4379,6 +4419,10 @@ textarea.form-control.is-invalid{
 
 .justify-evenly{
   justify-content: space-evenly;
+}
+
+.justify-items-center{
+  justify-items: center;
 }
 
 .gap-10{
@@ -4455,8 +4499,17 @@ textarea.form-control.is-invalid{
   background-color: rgb(251 146 60 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#FFFBF1\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 251 241 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\/assets\/img\/hero-bg\.png\'\)\]{
   background-image: url('/assets/img/hero-bg.png');
+}
+
+.bg-\[url\(\'\/assets\/img\/hero-team\.png\'\)\]{
+  background-image: url('/assets/img/hero-team.png');
 }
 
 .bg-cover{
@@ -4475,6 +4528,11 @@ textarea.form-control.is-invalid{
 .object-scale-down{
   -o-object-fit: scale-down;
      object-fit: scale-down;
+}
+
+.object-center{
+  -o-object-position: center;
+     object-position: center;
 }
 
 .p-3{
@@ -4559,6 +4617,10 @@ textarea.form-control.is-invalid{
   text-align: justify;
 }
 
+.align-middle{
+  vertical-align: middle;
+}
+
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
@@ -4579,9 +4641,19 @@ textarea.form-control.is-invalid{
   line-height: 1.25rem;
 }
 
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .text-3xl{
@@ -4589,14 +4661,9 @@ textarea.form-control.is-invalid{
   line-height: 2.25rem;
 }
 
-.text-lg{
-  font-size: 1.125rem;
+.text-xl{
+  font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 
 .font-medium{
@@ -4627,6 +4694,11 @@ textarea.form-control.is-invalid{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#F2F2F2\]{
+  --tw-text-opacity: 1;
+  color: rgb(242 242 242 / var(--tw-text-opacity));
 }
 
 .shadow{
@@ -5145,14 +5217,14 @@ p{
     line-height: 1;
   }
 
-  .sm\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .sm\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .sm\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -5199,19 +5271,14 @@ p{
     padding-bottom: 0.5rem;
   }
 
-  .md\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .md\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -5278,14 +5345,14 @@ p{
     padding-bottom: 0.5rem;
   }
 
-  .lg\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
   .lg\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .lg\:shadow-none{
