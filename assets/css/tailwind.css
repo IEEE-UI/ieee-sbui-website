@@ -1579,7 +1579,7 @@ p {
 }
 
 .footer-links {
-  line-height: 2.25rem;
+  line-height: 1.25rem;
   --text-opacity: 1;
   color: #f7fafc;
   color: rgba(247, 250, 252, var(--text-opacity));

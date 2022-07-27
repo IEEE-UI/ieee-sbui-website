@@ -24,6 +24,18 @@
   text-align: center;
 }
 
+.nav-team{
+  display: block;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+  transition-duration: 300ms;
+}
+
 .orange-ieee {
 
   color: #FFB344;
@@ -192,8 +204,5 @@ img{
   position: absolute;
   background: linear-gradient(95.6deg, rgba(48, 99, 175, 0.67) 5.16%, rgba(0, 161, 157, 0.8) 98.6%);
   left: 27,5vw;
-  height: 35vh;
-  width: 55vw;
-  bottom: 10vh;
 
 }
