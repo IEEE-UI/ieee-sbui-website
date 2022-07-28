@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
 
 /*
-! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
+! tailwindcss v3.1.6 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -189,6 +189,8 @@ textarea {
   /* 1 */
   font-size: 100%;
   /* 1 */
+  font-weight: inherit;
+  /* 1 */
   line-height: inherit;
   /* 1 */
   color: inherit;
@@ -355,13 +357,6 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   /* 2 */
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
-
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
@@ -417,15 +412,103 @@ video {
   height: auto;
 }
 
-/*
-Ensure the default browser behavior of the `hidden` attribute.
-*/
-
-[hidden] {
-  display: none;
+*, ::before, ::after{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
 }
 
-*, ::before, ::after{
+::-webkit-backdrop{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -642,10 +725,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: transparent;
 }
 
-.form-floating > .form-control:-ms-input-placeholder{
-  color: transparent;
-}
-
 .form-floating > .form-control::placeholder{
   color: transparent;
 }
@@ -656,11 +735,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .form-floating > .form-control:not(:-moz-placeholder-shown){
-  padding-top: 1.625rem;
-  padding-bottom: 0.625rem;
-}
-
-.form-floating > .form-control:not(:-ms-input-placeholder){
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
@@ -685,11 +759,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
 
-.form-floating > .form-control:not(:-ms-input-placeholder) ~ label{
-  opacity: 0.65;
-  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
-}
-
 .form-floating > .form-control:not(:placeholder-shown) ~ label{
   opacity: 0.65;
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
@@ -703,17 +772,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 3;
 }
 
-.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu){
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
 .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3){
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.input-group.has-validation > :nth-last-child(n+3):not(.dropdown-toggle):not(.dropdown-menu){
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -721,12 +780,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .input-group.has-validation > .dropdown-toggle:nth-last-child(n+4){
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-}
-
-.input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
-  margin-left: -1px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
 }
 
 .was-validated .form-control:valid{
@@ -1120,17 +1173,6 @@ textarea.form-control.is-invalid{
   color: #fff;
 }
 
-.accordion-button:not(.collapsed){
-  color: #2563eb;
-  background-color: #fff;
-  box-shadow: inset 0 -1px 0 #e5e7eb;
-}
-
-.accordion-button:not(.collapsed)::after{
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232563eb'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-  transform: rotate(-180deg);
-}
-
 .accordion-item:last-of-type .accordion-button.collapsed{
   border-bottom-right-radius: calc(0.5rem - 1px);
   border-bottom-left-radius: calc(0.5rem - 1px);
@@ -1140,7 +1182,6 @@ textarea.form-control.is-invalid{
   pointer-events: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   opacity: 0.25;
 }
@@ -4109,6 +4150,10 @@ textarea.form-control.is-invalid{
   visibility: visible;
 }
 
+.invisible{
+  visibility: hidden;
+}
+
 .static{
   position: static;
 }
@@ -4146,54 +4191,6 @@ textarea.form-control.is-invalid{
   bottom: 0px;
 }
 
-.left-\[10\%\]{
-  left: 10%;
-}
-
-.bottom-\[10\%\]{
-  bottom: 10%;
-}
-
-.bottom-\[50\%\]{
-  bottom: 50%;
-}
-
-.bottom-\[100\%\]{
-  bottom: 100%;
-}
-
-.top-\[100\%\]{
-  top: 100%;
-}
-
-.top-\[20\%\]{
-  top: 20%;
-}
-
-.top-10{
-  top: 2.5rem;
-}
-
-.bottom-10{
-  bottom: 2.5rem;
-}
-
-.bottom-20{
-  bottom: 5rem;
-}
-
-.bottom-96{
-  bottom: 24rem;
-}
-
-.bottom-\[40\%\]{
-  bottom: 40%;
-}
-
-.bottom-\[30\%\]{
-  bottom: 30%;
-}
-
 .bottom-\[35\%\]{
   bottom: 35%;
 }
@@ -4204,6 +4201,18 @@ textarea.form-control.is-invalid{
 
 .z-20{
   z-index: 20;
+}
+
+.z-\[1\]{
+  z-index: 1;
+}
+
+.z-\[2\]{
+  z-index: 2;
+}
+
+.z-\[0\]{
+  z-index: 0;
 }
 
 .float-left{
@@ -4236,11 +4245,6 @@ textarea.form-control.is-invalid{
 .mx-3{
   margin-left: 0.75rem;
   margin-right: 0.75rem;
-}
-
-.mx-\[20\%\]{
-  margin-left: 20%;
-  margin-right: 20%;
 }
 
 .mr-auto{
@@ -4299,62 +4303,6 @@ textarea.form-control.is-invalid{
   margin-left: 0.5rem;
 }
 
-.mb-20{
-  margin-bottom: 5rem;
-}
-
-.mt-5{
-  margin-top: 1.25rem;
-}
-
-.ml-40{
-  margin-left: 10rem;
-}
-
-.mr-40{
-  margin-right: 10rem;
-}
-
-.mr-\[20\%\]{
-  margin-right: 20%;
-}
-
-.ml-\[20\%\]{
-  margin-left: 20%;
-}
-
-.mr-\[10\%\]{
-  margin-right: 10%;
-}
-
-.ml-\[10\%\]{
-  margin-left: 10%;
-}
-
-.mr-\[40\%\]{
-  margin-right: 40%;
-}
-
-.ml-\[40\%\]{
-  margin-left: 40%;
-}
-
-.mr-\[15\%\]{
-  margin-right: 15%;
-}
-
-.ml-\[15\%\]{
-  margin-left: 15%;
-}
-
-.mb-\[205\]{
-  margin-bottom: 205;
-}
-
-.mb-\[20\%\]{
-  margin-bottom: 20%;
-}
-
 .mb-\[10\%\]{
   margin-bottom: 10%;
 }
@@ -4367,16 +4315,16 @@ textarea.form-control.is-invalid{
   display: inline-block;
 }
 
+.inline{
+  display: inline;
+}
+
 .flex{
   display: flex;
 }
 
 .table{
   display: table;
-}
-
-.grid{
-  display: grid;
 }
 
 .hidden{
@@ -4393,34 +4341,6 @@ textarea.form-control.is-invalid{
 
 .h-10{
   height: 2.5rem;
-}
-
-.h-20{
-  height: 5rem;
-}
-
-.h-44{
-  height: 11rem;
-}
-
-.h-\[80\%\]{
-  height: 80%;
-}
-
-.h-\[20\%\]{
-  height: 20%;
-}
-
-.h-\[40\%\]{
-  height: 40%;
-}
-
-.h-\[30\%\]{
-  height: 30%;
-}
-
-.h-\[10\%\]{
-  height: 10%;
 }
 
 .h-auto{
@@ -4441,12 +4361,12 @@ textarea.form-control.is-invalid{
   width: 2.5rem;
 }
 
-.w-\[70\%\]{
-  width: 70%;
-}
-
 .w-\[80\%\]{
   width: 80%;
+}
+
+.w-\[15rem\]{
+  width: 15rem;
 }
 
 .max-w-5xl{
@@ -4463,12 +4383,6 @@ textarea.form-control.is-invalid{
 
 .flex-grow{
   flex-grow: 1;
-}
-
-.scale-\[20\%\]{
-  --tw-scale-x: 20%;
-  --tw-scale-y: 20%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .scale-\[80\%\]{
@@ -4530,16 +4444,8 @@ textarea.form-control.is-invalid{
   flex-wrap: wrap;
 }
 
-.place-content-center{
-  place-content: center;
-}
-
 .items-center{
   align-items: center;
-}
-
-.items-stretch{
-  align-items: stretch;
 }
 
 .justify-center{
@@ -4558,60 +4464,8 @@ textarea.form-control.is-invalid{
   justify-content: space-evenly;
 }
 
-.justify-items-center{
-  justify-items: center;
-}
-
 .gap-10{
   gap: 2.5rem;
-}
-
-.gap-14{
-  gap: 3.5rem;
-}
-
-.gap-\[40\%\]{
-  gap: 40%;
-}
-
-.gap-\[20\%\]{
-  gap: 20%;
-}
-
-.gap-\[50\%\]{
-  gap: 50%;
-}
-
-.gap-\[90\%\]{
-  gap: 90%;
-}
-
-.gap-y-14{
-  row-gap: 3.5rem;
-}
-
-.space-x-\[20\%\] > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(20% * var(--tw-space-x-reverse));
-  margin-left: calc(20% * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-\[40\%\] > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(40% * var(--tw-space-x-reverse));
-  margin-left: calc(40% * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-\[30\%\] > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(30% * var(--tw-space-x-reverse));
-  margin-left: calc(30% * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-20 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(5rem * var(--tw-space-x-reverse));
-  margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-10 > :not([hidden]) ~ :not([hidden]){
@@ -4620,8 +4474,10 @@ textarea.form-control.is-invalid{
   margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.self-center{
-  align-self: center;
+.space-x-\[30\%\] > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(30% * var(--tw-space-x-reverse));
+  margin-left: calc(30% * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden{
@@ -4650,6 +4506,10 @@ textarea.form-control.is-invalid{
 
 .border-0{
   border-width: 0px;
+}
+
+.border-2{
+  border-width: 2px;
 }
 
 .border-t-2{
@@ -4720,11 +4580,6 @@ textarea.form-control.is-invalid{
      object-fit: cover;
 }
 
-.object-none{
-  -o-object-fit: none;
-     object-fit: none;
-}
-
 .object-scale-down{
   -o-object-fit: scale-down;
      object-fit: scale-down;
@@ -4742,16 +4597,12 @@ textarea.form-control.is-invalid{
   padding: 0px;
 }
 
-.p-12{
-  padding: 3rem;
-}
-
-.p-10{
-  padding: 2.5rem;
-}
-
 .p-8{
   padding: 2rem;
+}
+
+.p-\[2px\]{
+  padding: 2px;
 }
 
 .py-2{
@@ -4804,19 +4655,9 @@ textarea.form-control.is-invalid{
   padding-bottom: 1.5rem;
 }
 
-.px-\[40\%\]{
-  padding-left: 40%;
-  padding-right: 40%;
-}
-
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.py-\[20\%\]{
-  padding-top: 20%;
-  padding-bottom: 20%;
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-\[10\%\]{
@@ -4824,19 +4665,9 @@ textarea.form-control.is-invalid{
   padding-bottom: 10%;
 }
 
-.py-\[5\%\]{
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pl-4{
@@ -4845,38 +4676,6 @@ textarea.form-control.is-invalid{
 
 .pr-10{
   padding-right: 2.5rem;
-}
-
-.pr-\[10\%\]{
-  padding-right: 10%;
-}
-
-.pl-\[10\%\]{
-  padding-left: 10%;
-}
-
-.pr-\[40\%\]{
-  padding-right: 40%;
-}
-
-.pl-\[40\%\]{
-  padding-left: 40%;
-}
-
-.pr-\[15\%\]{
-  padding-right: 15%;
-}
-
-.pl-\[15\%\]{
-  padding-left: 15%;
-}
-
-.pb-\[20\%\]{
-  padding-bottom: 20%;
-}
-
-.pb-\[10\%\]{
-  padding-bottom: 10%;
 }
 
 .pb-\[8\%\]{
@@ -4916,24 +4715,14 @@ textarea.form-control.is-invalid{
   line-height: 1.75rem;
 }
 
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .font-medium{
@@ -4971,6 +4760,16 @@ textarea.form-control.is-invalid{
   color: rgb(242 242 242 / var(--tw-text-opacity));
 }
 
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-\[\#00a19d\]{
+  --tw-text-opacity: 1;
+  color: rgb(0 161 157 / var(--tw-text-opacity));
+}
+
 .shadow{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -4986,6 +4785,12 @@ textarea.form-control.is-invalid{
 .shadow-md{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-2xl{
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -5117,7 +4922,8 @@ p{
   transition-duration: 300ms;
 }
 
-.page-scroll.active, .page-scroll:hover{
+.page-scroll.active, 
+.page-scroll:hover{
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
 }
@@ -5250,7 +5056,8 @@ p{
   transition-duration: 300ms;
 }
 
-.tns-nav>.tns-nav-active, .tns-nav button:hover{
+.tns-nav>.tns-nav-active, 
+.tns-nav button:hover{
   opacity: 1;
 }
 
@@ -5356,12 +5163,6 @@ p{
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.hover\:scale-\[100\%\]:hover{
-  --tw-scale-x: 100%;
-  --tw-scale-y: 100%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:bg-blue-600:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
@@ -5390,11 +5191,6 @@ p{
 .hover\:bg-orange-500:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
-}
-
-.hover\:object-none:hover{
-  -o-object-fit: none;
-     object-fit: none;
 }
 
 .hover\:text-white:hover{
@@ -5462,6 +5258,10 @@ p{
 }
 
 @media (min-width: 640px){
+  .sm\:visible{
+    visibility: visible;
+  }
+
   .sm\:absolute{
     position: absolute;
   }
@@ -5482,10 +5282,16 @@ p{
     width: 50%;
   }
 
-  .sm\:space-x-10 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  .sm\:p-8{
+    padding: 2rem;
+  }
+
+  .sm\:p-6{
+    padding: 1.5rem;
+  }
+
+  .sm\:p-7{
+    padding: 1.75rem;
   }
 
   .sm\:px-5{
@@ -5515,6 +5321,10 @@ p{
 }
 
 @media (min-width: 768px){
+  .md\:visible{
+    visibility: visible;
+  }
+
   .md\:bottom-\[10vh\]{
     bottom: 10vh;
   }
@@ -5525,10 +5335,6 @@ p{
 
   .md\:mr-10{
     margin-right: 2.5rem;
-  }
-
-  .md\:h-\[30\%\]{
-    height: 30%;
   }
 
   .md\:w-1\/3{
@@ -5547,12 +5353,6 @@ p{
     --tw-space-x-reverse: 0;
     margin-right: calc(5rem * var(--tw-space-x-reverse));
     margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .md\:space-x-60 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(15rem * var(--tw-space-x-reverse));
-    margin-left: calc(15rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:p-12{
@@ -5588,9 +5388,18 @@ p{
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px){
+  .lg\:visible{
+    visibility: visible;
+  }
+
   .lg\:static{
     position: static;
   }
@@ -5623,12 +5432,6 @@ p{
     width: 75%;
   }
 
-  .lg\:space-x-60 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(15rem * var(--tw-space-x-reverse));
-    margin-left: calc(15rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .lg\:bg-transparent{
     background-color: transparent;
   }
@@ -5638,29 +5441,9 @@ p{
     padding-right: 5rem;
   }
 
-  .lg\:px-6{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .lg\:py-2\.5{
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
-  }
-
-  .lg\:py-2{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
   .lg\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .lg\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
   }
 
   .lg\:shadow-none{
@@ -5671,10 +5454,6 @@ p{
 }
 
 @media (min-width: 1280px){
-  .xl\:hidden{
-    display: none;
-  }
-
   .xl\:text-5xl{
     font-size: 3rem;
     line-height: 1;
@@ -5682,34 +5461,14 @@ p{
 }
 
 @media (min-width: 1536px){
-  .\32xl\:static{
-    position: static;
-  }
-
   .\32xl\:mr-0{
     margin-right: 0px;
-  }
-
-  .\32xl\:block{
-    display: block;
-  }
-
-  .\32xl\:flex{
-    display: flex;
-  }
-
-  .\32xl\:hidden{
-    display: none;
   }
 
   .\32xl\:space-x-60 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(15rem * var(--tw-space-x-reverse));
     margin-left: calc(15rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .\32xl\:bg-transparent{
-    background-color: transparent;
   }
 
   .\32xl\:px-6{
@@ -5727,9 +5486,9 @@ p{
     padding-bottom: 0.5rem;
   }
 
-  .\32xl\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .\32xl\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .\32xl\:text-4xl{
@@ -5737,14 +5496,8 @@ p{
     line-height: 2.5rem;
   }
 
-  .\32xl\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .\32xl\:shadow-none{
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  .\32xl\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
