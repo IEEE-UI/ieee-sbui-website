@@ -150,6 +150,15 @@ img{
   border-radius: 30px;
 }
 
+/* Custom CSS for Instagram START */
+iframe.instagram-media {
+  max-width: 100% !important;
+  width: 100% !important;
+  min-width: auto !important;
+}
+/* Custom CSS for Instagram END */
+
+
 /* Custom CSS for Events START */
 .events-container {
   position: absolute;
