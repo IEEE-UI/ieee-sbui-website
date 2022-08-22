@@ -25,7 +25,7 @@
 <link rel="stylesheet" type="text/css" href="assets/fonts/Butler_Webfont/stylesheet.css">
 </head>
 
-<body class="bg-[#FFFBF1]">
+<body class="bg-[#FFFBF1]" style="min-width: 320px;">
 
   <!-- Header Area wrapper Starts -->
   <header id="header-wrap" class="relative">
@@ -107,36 +107,35 @@
     </div>
   </section>
   <!-- Updated Hero Area End -->
-
   <!-- Pengurus Inti START-->
   <section id="pengurus-inti" class="bg-[#FFFBF1] mb-[10%] text-lg md:text-xl">
     <div class="container w-full mx-auto">
       <div class="flex flex-col items-center justify-center py-[10%]">
-        <div class="flex pb-[8%]">
-          <div class="flex flex-col justify-center items-center">
+        <div class="flex ">
+          <div class="flex flex-col justify-center items-center person-card">
             <h2 class="section-title font-medium mb-[10%] 2xl:text-4xl wow fadeInDown" data-wow-delay="0.3s">President
             </h2>
-            <img class="scale-[80%]" src="assets/img/default-avatar.png" alt="foto gil">
+            <img class="img-card" src="assets/img/default-avatar.png" alt="foto gil">
             <h3 class="section-title font-medium text-center 2xl:text-2xl wow fadeInDown" data-wow-delay="0.3s">Muhammad
               Gilfran
               Samual</h3>
           </div>
         </div>
 
-        <div class="flex flex-row space-x-[30%]">
-          <div class="flex flex-col justify-center items-center">
-            <h3 class="section-title font-medium mb-[10%] 2xl:text-4xl wow fadeInDown" data-wow-delay="0.3s">Secretary
+        <div class="flex flex-row justify-center">
+          <div class="flex flex-col justify-center items-center person-card w-1/2">
+            <h3 class="section-title role-text  mb-[10%] 2xl:text-4xl wow fadeInDown" data-wow-delay="0.3s">Secretary
             </h3>
-            <img class="" src="assets/img/default-avatar.png" alt="foto bendahara">
+            <img class="img-card" src="assets/img/default-avatar.png" alt="foto bendahara">
             <h3 class="section-title font-medium text-center 2xl:text-2xl wow fadeInDown" data-wow-delay="0.3s">Nolland
               Zidane
             </h3>
           </div>
-          <div class="flex flex-col justify-center items-center">
-            <h3 class="section-title font-medium mb-[10%] 2xl:text-4xl wow fadeInDown" data-wow-delay="0.3s">Treasurer
+          <div class="flex flex-col justify-center items-center person-card w-1/2">
+            <h3 class="section-title role-text mb-[10%] 2xl:text-4xl wow fadeInDown" data-wow-delay="0.3s">Treasurer
             </h3>
-            <img src="assets/img/default-avatar.png" alt="foto sekre">
-            <h3 class="section-title font-medium text-center 2xl:text-2xl wow fadeInDown" data-wow-delay="0.3s">Ivan
+            <img class="img-card" src="assets/img/default-avatar.png" alt="foto sekre">
+            <h3 class="section-title role-text text-center 2xl:text-2xl wow fadeInDown" data-wow-delay="0.3s">Ivan
               Hans</h3>
           </div>
         </div>
@@ -144,90 +143,140 @@
       <!-- Pengurus Inti END-->
 
       <!-- Internal Operation Division START -->
-      <div class="outer-card lg:w-3/4 mx-auto p-4 shadow-2xl rounded-3xl text-center font-medium">
+      <div class="outer-card w-full lg:w-3/4 mx-auto p-4 shadow-2xl rounded-3xl text-center font-medium">
 
         <img class="gradient-circle-team invisible lg:visible" src="assets/img/decor/full-gradient-blur.png" alt="">
 
         <div class="border-card rounded-3xl p-[2px]">
-          <div class="bg-[#FFFBF1] rounded-3xl p-8">
+          <div class="bg-[#FFFBF1] rounded-3xl p-2 md:p-8">
 
             <!-- Division Name -->
             <h1 class="text-[#00a19d] py-6 sm:p-8 text-2xl md:text-4xl ">Internal Operations</h1>
-            <h2 class="text-black">Director</h2>
-            <h2 class="text-[#00a19d]">Internal Operations</h2>
-            <img class="w-[15rem] mx-auto p-4" src="assets/img/default-avatar.png" alt="">
+
+            <h2 class="text-black role-text">Director</h2>
+            <h2 class="text-[#00a19d] subdiv-text">Internal Operations</h2>
+
+            <img class="img-card" src="assets/img/default-avatar.png" alt="">
 
             <!-- Director Name -->
-            <h2 class="text-black">Nada Wahyudhia</h2>
+            <h2 class="text-black name-text">Nada Wahyudhia</h2>
             <div class="pt-5"></div>
-            <div class="inner-card p-4 rounded-3xl bg-white">
+            <div class="inner-card p-4 h-fit rounded-3xl bg-white">
 
               <!-- Inner Accordion START -->
               <div class="accordion accordion-flush" id="accordionExample">
-                <div class="flex justify-center items-center space-x-10">
+                <div class="flex flex-wrap justify-center items-center ">
 
                   <!-- Manager 1 -->
-                  <div class="flex flex-col justify-center">
-                    <h2 class="text-black">Member Acquisition</h2>
-                    <div class="accordion-item">
-                      <a type="button" data-bs-toggle="collapse" data-bs-target="#inOpsOne" aria-expanded="true"
-                        aria-controls="inOpsOne">
-                        <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                          class="rounded-full w-32 accordion-header" alt="Avatar" />
-                      </a>
-                      <h2 class="text-black">Zihan <br> Nindia</h2>
+                  <div class="flex flex-col justify-center person-card">
+                    <h2 class="text-black role-text">Manager</h2>
+                    <h2 class="text-[#00a19d] subdiv-text">Member Acquisition</h2>
+
+                    <div class="accordion-item ">
+
+                      <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        class="img-card accordion-header" alt="Avatar" />
+
+                      <h2 class="text-black name-text">Zihan Nindia</h2>
                     </div>
                   </div>
 
                   <!-- Manager 2 -->
-                  <div class="flex flex-col justify-center items-center">
-                    <h2 class="text-black">Internal Development</h2>
-                    <div class="accordion-item">
-                      <a type="button" data-bs-toggle="collapse" data-bs-target="#inOpsTwo" aria-expanded="false"
-                        aria-controls="inOpsTwo">
-                        <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                          class="rounded-full w-32 accordion-header" alt="Avatar" />
-                      </a>
-                      <h2 class="text-black">Grelyntan <br> Natalia</h2>
+                  <div class="flex flex-col justify-center person-card">
+                    <h2 class="text-black role-text">Manager</h2>
+                    <h2 class="text-[#00a19d] subdiv-text">Internal Development</h2>
+
+                    <div class="accordion-item ">
+
+                      <a type="button" data-bs-toggle="collapse" data-bs-target="#inOpsTwo" aria-expanded="true"
+                      aria-controls="inOpsTwo">
+                      <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        class="img-card accordion-header" alt="Avatar" />
+                    </a>
+                      <h2 class="text-black name-text">Grelyntan Natalia</h2>
                     </div>
                   </div>
 
                   <!-- Manager 3 -->
-                  <div class="flex flex-col justify-center items-center">
-                    <h2 class="text-black">Research & Development</h2>
-                    <div class="accordion-item">
-                      <a type="button" data-bs-toggle="collapse" data-bs-target="#inOpsThree" aria-expanded="false"
+                  <div class="flex flex-col justify-center person-card">
+                    <h2 class="text-black role-text">Manager</h2>
+                    <h2 class="text-[#00a19d] subdiv-text">Research & Development</h2>
+
+                    <div class="accordion-item ">
+                      <a type="button" data-bs-toggle="collapse" data-bs-target="#inOpsThree" aria-expanded="true"
                         aria-controls="inOpsThree">
                         <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                          class="rounded-full w-32 accordion-header" alt="Avatar" />
+                          class="img-card accordion-header" alt="Avatar" />
                       </a>
-                      <h2 class="text-black">Alhaura Edsa <br> Batrisya Setiawan</h2>
+                      <h2 class="text-black text-sm ">Alhaura Edsa Batrisya Setiawan</h2>
                     </div>
                   </div>
+
                 </div>
 
+                <!-- Staff of Internal Development -->
                 <div className="flex fade transition duration-300">
-                  <div id="inOpsOne" class="accordion-collapse collapse pt-5" aria-labelledby="headingOne"
+                  <div id="inOpsTwo" class="accordion-collapse collapse pt-5" aria-labelledby="headingOne"
                     data-bs-parent="#accordionExample">
                     <div class="border-card rounded-3xl p-[2px]">
                       <div class="accordion-body py-4 px-5 bg-[#FFFBF1] rounded-3xl p-8">
 
                         <!-- Staff 1 -->
-                        <h2 class="text-2xl pt-2 ">Staff Of Member Acquisition</h2>
-                        <div class="flex flex-row justify-center items-center space-x-10 pt-5">
+                        <h2 class="text-2xl pt-2 ">Staff Of Internal Development</h2>
+                        <div class="flex flex-wrap justify-center items-center pt-5">
 
                           <!-- Staff Member 1 -->
-                          <div class="flex flex-col">
-                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                              class="rounded-full w-32 accordion-header" alt="Avatar" />
-                            <h2 class="text-black">Alhaura Edsa <br> Batrisya Setiawan</h2>
+                          <div class="flex flex-col justify-center person-card">
+                            <h2 class="text-black role-text">Staff</h2>
+                            <h2 class="text-[#00a19d] subdiv-text">Internal Development</h2>
+        
+                            <div class="accordion-item ">
+        
+                              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                                class="img-card accordion-header" alt="Avatar" />
+        
+                              <h2 class="text-black name-text">M. Atthar Hafizhan</h2>
+                            </div>
                           </div>
 
                           <!-- Staff Member 2 -->
-                          <div class="flex flex-col">
-                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                              class="rounded-full w-32 accordion-header" alt="Avatar" />
-                            <h2 class="text-black">Alhaura Edsa <br> Batrisya Setiawan</h2>
+                          <div class="flex flex-col justify-center person-card">
+                            <h2 class="text-black role-text">Staff</h2>
+                            <h2 class="text-[#00a19d] subdiv-text">Internal Development</h2>
+        
+                            <div class="accordion-item ">
+        
+                              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                                class="img-card accordion-header" alt="Avatar" />
+        
+                              <h2 class="text-black name-text">Ketut Ivan Sridana</h2>
+                            </div>
+                          </div>
+                          <!-- Staff Member 3 -->
+                          <div class="flex flex-col justify-center person-card">
+                            <h2 class="text-black role-text">Staff</h2>
+                            <h2 class="text-[#00a19d] subdiv-text">Internal Development</h2>
+        
+                            <div class="accordion-item ">
+        
+                              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                                class="img-card accordion-header" alt="Avatar" />
+        
+                              <h2 class="text-black name-text">Darrel Ihsan</h2>
+                            </div>
+                          </div>
+                          <!-- Staff Member 4 -->
+                          <div class="flex flex-col justify-center person-card">
+                            <h2 class="text-black role-text">Staff</h2>
+                            <h2 class="text-[#00a19d] subdiv-text">Internal Development</h2>
+        
+                            <div class="accordion-item ">
+        
+                              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                                class="img-card accordion-header" alt="Avatar" />
+        
+                              <h2 class="text-black name-text">Adzikra Devaryan P.</h2>
+                            </div>
                           </div>
 
                         </div>
@@ -236,54 +285,56 @@
                     </div>
                   </div>
 
-                  <div id="inOpsTwo" class="accordion-collapse collapse pt-5" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="border-card rounded-3xl p-[2px]">
-                      <div class="accordion-body py-4 px-5 bg-[#FFFBF1] rounded-3xl p-8">
-
-                        <!-- Staff 2 -->
-                        <h2 class="text-2xl pt-2">Staff Of Internal Development</h2>
-                        <div class="flex flex-row justify-center items-center space-x-10 pt-5">
-
-                          <!-- Staff Member 1 -->
-                          <div class="flex flex-col">
-                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                              class="rounded-full w-32 accordion-header" alt="Avatar" />
-                            <h2 class="text-black">Alhaura Edsa <br> Batrisya Setiawan</h2>
-                          </div>
-
-                          <!-- Staff Member 2 -->
-                          <div class="flex flex-col">
-                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                              class="rounded-full w-32 accordion-header" alt="Avatar" />
-                            <h2 class="text-black">Alhaura Edsa <br> Batrisya Setiawan</h2>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
+                  <!-- Staff of Research & Development -->
                   <div id="inOpsThree" class="accordion-collapse collapse pt-5" aria-labelledby="headingThree"
                     data-bs-parent="#accordionExample">
                     <div class="border-card rounded-3xl p-[2px]">
-                      <div class="accordion-body py-4 px-5 bg-[#FFFBF1] rounded-3xl p-8">
+                      <div class="accordion-body py-4  bg-[#FFFBF1] rounded-3xl p-4">
                         <!-- Staff 3 -->
                         <h2 class="text-2xl pt-2 ">Staff Of Research & Development</h2>
-                        <div class="flex flex-row justify-center items-center space-x-10 pt-5">
+                        <div class="flex flex-wrap justify-center items-center pt-5">
 
                           <!-- Staff Member 1 -->
-                          <div class="flex flex-col">
-                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                              class="rounded-full w-32 accordion-header" alt="Avatar" />
-                            <h2 class="text-black">Alhaura Edsa <br> Batrisya Setiawan</h2>
+                          <div class="flex flex-col justify-center person-card">
+                            <h2 class="text-black role-text">Staff</h2>
+                            <h2 class="text-[#00a19d] subdiv-text">Research & Development</h2>
+        
+                            <div class="accordion-item ">
+        
+                              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                                class="img-card accordion-header" alt="Avatar" />
+        
+                              <h2 class="text-black name-text">Raihan Alif Tirtawijaya</h2>
+                            </div>
                           </div>
 
                           <!-- Staff Member 2 -->
-                          <div class="flex flex-col">
-                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                              class="rounded-full w-32 accordion-header" alt="Avatar" />
-                            <h2 class="text-black">Alhaura Edsa <br> Batrisya Setiawan</h2>
+                          <div class="flex flex-col justify-center person-card">
+                            <h2 class="text-black role-text">Staff</h2>
+                            <h2 class="text-[#00a19d] subdiv-text">Research & Development</h2>
+        
+                            <div class="accordion-item ">
+        
+                              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                                class="img-card accordion-header" alt="Avatar" />
+        
+                              <h2 class="text-black name-text">Putri Faizah Shafira</h2>
+                            </div>
                           </div>
+                          <!-- Staff Member 3 -->
+                          <div class="flex flex-col justify-center person-card">
+                            <h2 class="text-black role-text">Staff</h2>
+                            <h2 class="text-[#00a19d] subdiv-text">Research & Development</h2>
+        
+                            <div class="accordion-item ">
+        
+                              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                                class="img-card accordion-header" alt="Avatar" />
+        
+                              <h2 class="text-black name-text">Khairinka R. Lizadhi</h2>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </div>
