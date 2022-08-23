@@ -4618,8 +4618,16 @@ textarea.form-control.is-invalid{
   background-image: url('/assets/img/hero-team.png');
 }
 
+.bg-\[url\(\/assets\/img\/hero-team\.png\)\]{
+  background-image: url(/assets/img/hero-team.png);
+}
+
 .bg-cover{
   background-size: cover;
+}
+
+.bg-center{
+  background-position: center;
 }
 
 .bg-no-repeat{
@@ -5392,6 +5400,10 @@ p{
 }
 
 @media (min-width: 768px){
+  .md\:absolute{
+    position: absolute;
+  }
+
   .md\:bottom-\[10vh\]{
     bottom: 10vh;
   }
@@ -5440,6 +5452,10 @@ p{
     width: 55vw;
   }
 
+  .md\:w-full{
+    width: 100%;
+  }
+
   .md\:flex-wrap{
     flex-wrap: wrap;
   }
@@ -5452,6 +5468,10 @@ p{
     --tw-space-x-reverse: 0;
     margin-right: calc(5rem * var(--tw-space-x-reverse));
     margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:bg-cover{
+    background-size: cover;
   }
 
   .md\:p-12{
@@ -5499,12 +5519,63 @@ p{
 }
 
 @media (min-width: 1024px){
+  .dropdown-menu.lg\:show{
+    display: block;
+  }
+
+  .nav-tabs .nav-item.lg\:show .nav-link{
+    color: #2563eb;
+    border-color: #2563eb;
+  }
+
+  .nav-pills .lg\:show > .nav-link{
+    background: #2563eb;
+    color: #fff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .navbar-light .navbar-nav .lg\:show > .nav-link{
+    color: rgba(0, 0, 0, 0.9);
+  }
+
+  .navbar-dark .navbar-nav .lg\:show > .nav-link{
+    color: #fff;
+  }
+
+  .modal.lg\:show .modal-dialog{
+    transform: none;
+  }
+
+  .modal-backdrop.lg\:show{
+    opacity: 0.5;
+  }
+
+  .tooltip.lg\:show{
+    opacity: 1;
+  }
+
+  .offcanvas-backdrop.lg\:show{
+    opacity: 0.5;
+  }
+
+  .offcanvas.lg\:show{
+    transform: none;
+  }
+
+  .timepicker-modal .fade.lg\:show{
+    opacity: 1;
+  }
+
   .lg\:visible{
     visibility: visible;
   }
 
   .lg\:static{
     position: static;
+  }
+
+  .lg\:absolute{
+    position: absolute;
   }
 
   .lg\:mx-0{
@@ -5560,8 +5631,16 @@ p{
     width: 75%;
   }
 
+  .lg\:w-full{
+    width: 100%;
+  }
+
   .lg\:bg-transparent{
     background-color: transparent;
+  }
+
+  .lg\:bg-cover{
+    background-size: cover;
   }
 
   .lg\:px-20{
