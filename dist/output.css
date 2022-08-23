@@ -4436,6 +4436,10 @@ textarea.form-control.is-invalid{
   width: 50%;
 }
 
+.w-\[90\%\]{
+  width: 90%;
+}
+
 .max-w-5xl{
   max-width: 64rem;
 }
@@ -4746,6 +4750,10 @@ textarea.form-control.is-invalid{
 
 .pt-2{
   padding-top: 0.5rem;
+}
+
+.pb-20{
+  padding-bottom: 5rem;
 }
 
 .text-left{
