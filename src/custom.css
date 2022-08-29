@@ -24,7 +24,7 @@
   text-align: center;
 }
 
-.nav-team{
+.nav-team {
   display: block;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -45,7 +45,7 @@
 /* Custom CSS for Hero Area START */
 
 #hero-area {
-  color: #333333;  
+  color: #333333;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +71,7 @@
   font-weight: semibold;
 }
 
-.gradient-circle{
+.gradient-circle {
   position: absolute;
   width: 25rem;
   right: 0px;
@@ -106,7 +106,7 @@
   z-index: 1;
 }
 
-img{
+img {
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -118,6 +118,7 @@ img{
   .gradient-circle {
     top: 50vh;
   }
+
   .multi-dots {
     width: 0px;
   }
@@ -156,6 +157,7 @@ iframe.instagram-media {
   width: 100% !important;
   min-width: auto !important;
 }
+
 /* Custom CSS for Instagram END */
 
 
@@ -235,123 +237,129 @@ iframe.instagram-media {
 }
 
 .register-container {
-  
+
   position: absolute;
   background: linear-gradient(95.6deg, rgba(48, 99, 175, 0.67) 5.16%, rgba(0, 161, 157, 0.8) 98.6%);
-  left: 27,5vw;
+  left: 27, 5vw;
 
 }
 
 /* Custom CSS for Team Outer Card START */
-.outer-card{
+.outer-card {
   background: linear-gradient(150.21deg, rgba(255, 255, 255, 0.4) 17.8%, rgba(196, 196, 196, 0.16) 74.18%);
   font-family: Butler, sans-serif;
 }
 
-.border-card{
+.border-card {
   background: linear-gradient(180deg, #FFB344 0%, #00A19D 100%);
 }
 
-.gradient-circle-team{
+.gradient-circle-team {
   position: absolute;
   width: 25rem;
   left: 0px;
   z-index: 0;
 }
+
 /* Custom CSS for Team Outer Card END */
 
 /* Custom CSS for Team Inner Card START*/
-.img-card{
+.img-card {
   margin: 20px auto;
   height: 12rem;
   width: auto;
-  border-radius: 9999px;  
+  border-radius: 9999px;
 }
 
-.role-text{
+.role-text {
   font-size: 1em;
 }
 
-.subdiv-text{
+.subdiv-text {
   font-size: 0.8em;
   line-height: 1.2;
 }
 
-.name-text{
+.name-text {
   font-size: 0.9em;
 }
 
-.person-card{
+.person-card {
   width: 200px;
   height: 400px;
   margin: 0 40px;
 
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 @media (max-width: 1024px) {
-  .img-card{
+  .img-card {
     margin: 20px auto;
     height: 12rem;
     width: auto;
-    border-radius: 9999px;  
+    border-radius: 9999px;
 
   }
 
-  .person-card{
-  width: 200px;
-  height: 350px;
-  margin: 0 8px;
+  .person-card {
+    width: 200px;
+    height: 350px;
+    margin: 0 8px;
 
-}
+  }
 }
 
 @media (max-width: 820px) {
-  .img-card{
+  .img-card {
     margin: 20px auto;
     height: 10rem;
     width: auto;
-    border-radius: 9999px;  
+    border-radius: 9999px;
 
   }
 
-  .person-card{
-  width: 200px;
-  height: 300px;
-  margin: 0 5px;
+  .person-card {
+    width: 200px;
+    height: 300px;
+    margin: 0 5px;
 
-}
+  }
 }
 
 @media (max-width: 768px) {
-  .img-card{
+  .img-card {
     margin: 10px auto;
     height: 8rem;
     width: auto;
-    border-radius: 9999px;  
+    border-radius: 9999px;
 
   }
 
-  .person-card{
-  width: 200px;
-  height: 250px;
-  margin: 0 5px;
+  .person-card {
+    width: 200px;
+    height: 250px;
+    margin: 0 5px;
 
+  }
 }
-}
+
 @media (max-width: 425px) {
-  .img-card{
+  .img-card {
     margin: 10px auto;
     height: 5rem;
     width: auto;
-    border-radius: 9999px;  
+    border-radius: 9999px;
 
   }
 
-  .person-card{
-  width: 150px;
-  height: 200px;
-  margin: 0 5px;
-}
+  .person-card {
+    width: 150px;
+    height: 200px;
+    margin: 0 5px;
+  }
 }
 
 
