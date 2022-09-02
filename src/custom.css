@@ -264,11 +264,24 @@ iframe.instagram-media {
 /* Custom CSS for Team Outer Card END */
 
 /* Custom CSS for Team Inner Card START*/
+.inner-card{
+  background-color: #FFF;
+  /* background-color: #EDF3E8; */
+}
+
+
+
 .img-card {
   margin: 20px auto;
   height: 12rem;
   width: auto;
   border-radius: 9999px;
+}
+
+.img-shadow {
+  box-shadow: 5px 4px 9px 8px rgb(0 0 0 / 0.1);
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+  /* box-shadow: 0px 30px 60px rgba(50, 50, 93, 0.25)  -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
 }
 
 .role-text {
@@ -288,12 +301,17 @@ iframe.instagram-media {
   width: 200px;
   height: 400px;
   margin: 0 40px;
-
 }
 
 .clickable {
   cursor: pointer;
 }
+
+
+/* .img-card:active{
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+} */
+
 
 @media (max-width: 1024px) {
   .img-card {
