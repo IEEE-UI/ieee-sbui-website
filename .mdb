@@ -1,9 +1,0 @@
-{
-  "projectName": "ieee-website",
-  "meta": {
-    "type": "frontend"
-  },
-  "packageManager": "npm",
-  "hash": "102699f5",
-  "domain": "ieeesbui.mdbgo.io"
-}
