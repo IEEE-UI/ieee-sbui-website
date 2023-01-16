@@ -1,3 +1,4 @@
+import ieeeUIResizedBlue from "@img/logo/ieee-ui-resized-blue.png"
 import Image from 'next/image'
 import React from 'react'
 
@@ -7,7 +8,7 @@ const Navbar = () => {
         <div className="container">
             <nav className="relative flex items-center justify-between py-2 duration-300 navbar navbar-expand-lg">
                 <a className="pl-4 navbar-brand" href="index.html">
-                    <img src="assets/img/logo/ieee-ui-resized-blue.png" alt="IEEE SB UI"/>
+                    <Image src={ieeeUIResizedBlue} alt="IEEE SB UI"/>
                 </a>
                 <button className="block navbar-toggler focus:outline-none lg:hidden" type="button"
                     data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

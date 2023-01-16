@@ -19,7 +19,10 @@
       "@src": ["src/*"],
       "@app/*": ["src/app/*"],
       "@components/*":["src/components/*"],
-      "@styles/*" :["src/components/styles/*"]
+      "@styles/*" :["src/components/styles/*"],
+      "@public":["public/*"],
+      "@img/*" :["public/img/*"],
+      "@talents/*" :["public/talents/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
