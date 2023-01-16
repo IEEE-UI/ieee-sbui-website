@@ -5,7 +5,7 @@ export const Navbar = () => {
   return (
     <header id="header-wrap" className="relative">
         <div className="fixed top-0 left-0 z-30 w-full duration-300 navigation">
-            <div className="container">
+            <div className="container ">
                 <nav className="relative flex items-center justify-between py-2 duration-300 navbar navbar-expand-lg">
                     <a className="pl-4 navbar-brand" href="index.html">
                         <Image src={ieeeUIResizedBlue} alt="IEEE SB UI"/>
@@ -20,7 +20,7 @@ export const Navbar = () => {
                     <div className="absolute left-0 z-20 hidden w-full px-5 py-3 duration-300 bg-white shadow collapse navbar-collapse lg:block top-100 mt-full lg:static lg:bg-transparent lg:shadow-none"
                         id="navbarSupportedContent">
                         <ul className="items-center justify-center mr-auto navbar-nav lg:flex">
-                            <li className="nav-item">
+                            <li className="nav-item ">
                                 <a className="page-scroll active" href="#hero-area">Home</a>
                             </li>
                             <li className="nav-item">

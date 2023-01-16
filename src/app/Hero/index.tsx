@@ -1,20 +1,24 @@
+import Image from "next/image"
+import multiDots from "@img/decor/multi-dots.png"
+import star from "@img/decor/star.png"
+import half_gradient_blur from "@img/decor/half-gradient-blur.png"
+import downArrow from "@img/down-arrow.png"
 
 export const Hero = () => {
   return (
-    <section id="hero-area" className="bg-[url('/assets/img/hero-bg.png')] bg-cover no-repeat w-full">
-  
+    <section id="hero-area" className="w-full bg-cover bg-hero no-repeat">
     <div className="multi-dots wow fadeInUp" data-wow-delay="1.3s">
-      <img className="img-fluid" src="assets/img/decor/multi-dots.png" alt=""/>
+      <Image className="img-fluid" src={multiDots} alt=""/>
     </div>
     <div className="lower-star wow fadeInUp" data-wow-delay="1.3s">
-      <img className="img-fluid" src="assets/img/decor/star.png" alt=""/>
+      <Image className="img-fluid" src={star} alt=""/>
     </div>
     <div className="upper-star wow fadeInUp" data-wow-delay="1.3s">
-      <img className="img-fluid" src="assets/img/decor/star.png" alt=""/>
+      <Image className="img-fluid" src={star} alt=""/>
     </div>
-    <img className="gradient-circle" src="assets/img/decor/half-gradient-blur.png" alt=""/>
+    <Image className="gradient-circle" src={half_gradient_blur} alt=""/>
  
-    <div className="w-full text-center">
+    <div className="w-full text-center ">
       <h2 id="title" className="px-8 mb-4 text-6xl sm:text-8xl wow fadeInUp" data-wow-delay="1s">
         IEEE SBUI
       </h2>
@@ -30,7 +34,7 @@ export const Hero = () => {
       <br/>
       <div className="scroll wow fadeInDown" data-wow-delay="2.1s">
         <a href="#about-us">
-          <img className="img-fluid down-arrow animate-bounce" src="assets/img/down-arrow.png" alt="Get to know us!"/>
+          <Image className="img-fluid down-arrow animate-bounce" src={downArrow} alt="Get to know us!"/>
         </a>
       </div>
     </div>
