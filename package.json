@@ -1,7 +1,10 @@
 {
   "name": "ieee-website",
   "version": "0.1.0",
+  "description": "ieee ui website",
   "private": true,
+  "author": "ieee sbui",
+  "license": "ISC",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
